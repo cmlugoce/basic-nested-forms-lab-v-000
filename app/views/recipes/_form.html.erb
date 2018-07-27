@@ -3,10 +3,10 @@
    <p>
   Ingredients:
   </p>
-    <%= f.fields_for :ingredients do |ing| %>
+    <%= f.fields_for :ingredients do |ingredient| %>
     <fieldset>
-    Quantity: <%= ing.text_field :quantity %>
-    Name: <%= ing.text_field :name %>
+    Quantity: <%= ingredient.text_field :quantity %>
+    Name: <%= ingredient.text_field :name %>
   </fieldset>
   <% end %>
    <p>
